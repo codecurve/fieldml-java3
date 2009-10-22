@@ -2,11 +2,8 @@
 map: 
    org.fieldml.mapping.FieldElement@665753: !org.fieldml.core.interpolation.types.LinearLagrangeInterpolator_1D
       u1: !org.fieldml.core.parameter.types.ParamFromArrayByIndex
-         array: &1
-         - 0.1
-         - -0.3
-         - 2.0
-         - 0.12
+         array: *1
+         arrayIndex: 0
       u2: &2 !org.fieldml.core.parameter.types.ParamFromArrayByIndex
          array: *1
          arrayIndex: 1
@@ -15,3 +12,9 @@ map:
       u2: !org.fieldml.core.parameter.types.ParamFromArrayByIndex
          array: *1
          arrayIndex: 2
+array: &1
+   - 0.1
+   - -0.3
+   - 2.0
+   - 0.12
+         
