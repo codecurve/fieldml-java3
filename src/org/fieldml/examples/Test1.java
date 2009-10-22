@@ -71,14 +71,32 @@ public class Test1 extends TestCase {
     interpolator2.setU2(u3);
     mainMap.addValueProducerMapping(fieldElement2, interpolator2);
     
-    ValueProducer a = mainMap.findValueProducer(fieldElement1);
-    assertEquals(interpolator1, a);
+    ValueProducer vp1 = mainMap.findValueProducer(fieldElement1);
+    assertEquals(interpolator1, vp1);
     double[] xiVector = new double[1];
     xiVector[0] = 0.0;
-    double value1 = a.getValue(xiVector);
-    
-    assertEquals(array[0], value1, 1e-12);
+    double value = vp1.getValue(xiVector);
+    assertEquals(array[0], value, 1e-12);
+    xiVector[0] = 1.0;
+    value = vp1.getValue(xiVector);
+    assertEquals(array[1], value, 1e-12);
+    xiVector[0] = 0.5;
+    value = vp1.getValue(xiVector);
+    assertEquals((array[0]+array[1])/2, value, 1e-12);
 
+
+    ValueProducer vp2 = mainMap.findValueProducer(fieldElement2);
+    assertEquals(interpolator2, vp2);
+    xiVector[0] = 0.0;
+    value = vp2.getValue(xiVector);
+    assertEquals(array[1], value, 1e-12);
+    xiVector[0] = 1.0;
+    value = vp2.getValue(xiVector);
+    assertEquals(array[2], value, 1e-12);
+    xiVector[0] = 0.5;
+    value = vp2.getValue(xiVector);
+    assertEquals((array[1]+array[2])/2, value, 1e-12);
+  
   }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="interpolation_types" size="1369,630" id="org.fieldml.core.interpolation.types" metadata="uml2-1.0" initialized="true" scrolledY="369" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="interpolation_types" size="1369,630" id="org.fieldml.core.interpolation.types" metadata="uml2-1.0" initialized="true" scrolledY="396" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
   <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.4/@sourceConnections.0" name="Interpolator" location="596,316" size="152,55" id="org.fieldml.core/Interpolator" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
