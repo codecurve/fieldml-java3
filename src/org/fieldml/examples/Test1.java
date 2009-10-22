@@ -7,15 +7,17 @@ import junit.framework.TestCase;
 import org.fieldml.core.Element;
 import org.fieldml.core.Field;
 import org.fieldml.core.Interpolator;
+import org.fieldml.core.InvalidDomainException;
 import org.fieldml.core.Mesh;
 import org.fieldml.core.Parameter;
+import org.fieldml.core.ValueProducer;
 import org.fieldml.core.interpolation.types.LinearLagrangeInterpolator_1D;
 import org.fieldml.mapping.FieldElement;
 import org.fieldml.mapping.Map_FieldElement_to_ValueProducer;
 import org.fieldml.core.parameter.types.ParamFromArrayByIndex;
 
 public class Test1 extends TestCase {
-  public void testTest1a() {
+  public void testTest1a() throws InvalidDomainException {
     Mesh mesh = new Mesh();
 
     Field field1 = new Field();
@@ -67,6 +69,14 @@ public class Test1 extends TestCase {
     u3.setArrayIndex(2);
     interpolator1.setU2(u3);
     mainMap.addValueProducerMapping(fieldElement2, interpolator2);
+    
+    ValueProducer a = mainMap.findValueProducer(fieldElement1);
+    assertEquals(fieldElement2, a);
+    double[] xiVector = new double[1];
+    xiVector[0] = 0.0;
+    double value1 = a.getValue(xiVector);
+    
+    assertEquals(array[0], value1, 1e-12);
 
   }
 

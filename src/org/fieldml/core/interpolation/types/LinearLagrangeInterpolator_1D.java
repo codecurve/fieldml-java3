@@ -15,8 +15,27 @@ public class LinearLagrangeInterpolator_1D extends Interpolator {
 
   @Override
   public double getValue(double[] xiVector) throws InvalidDomainException {
-    // TODO Auto-generated method stub
-    return 0;
+    if(xiVector.length != 1) {
+      throw new InvalidDomainException("Linear Lagrange 1D requires xi1.");
+    }
+    
+    double xi1 = xiVector[0];
+    
+    if(xi1 < 0 || xi1 > 1){
+      throw new InvalidDomainException("Linear Lagrange 1D expects xi1 in interval [0,1].");
+    }
+    
+    return phi1(xi1) * u1.getValue() + phi2(xi1) * u2.getValue();
+  }
+
+
+  private static double phi1(double xi1) {
+    // TODO Should move phi evaluations such that if same xi values are used for multiple fields, phi calc can be reused.
+    return 1-xi1;
+  }
+
+  private static double phi2(double xi1) {
+    return xi2;
   }
 
 
