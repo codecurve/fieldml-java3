@@ -1,10 +1,7 @@
 package org.fieldml.mapping;
 
-import org.fieldml.core.Field;
 import org.fieldml.core.Element;
-import org.fieldml.core.Interpolator;
-
-import java.util.Map;
+import org.fieldml.core.Field;
 
 
 
