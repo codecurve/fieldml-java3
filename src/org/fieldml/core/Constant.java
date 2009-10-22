@@ -9,7 +9,7 @@ public class Constant implements ValueProducer {
   }
 
   @Override
-  public double getValue(XiVector xi) throws InvalidDomainException {
+  public double getValue(double[] xiVector) throws InvalidDomainException {
     throw new InvalidDomainException("Constant does not take xi values.");
   }
 

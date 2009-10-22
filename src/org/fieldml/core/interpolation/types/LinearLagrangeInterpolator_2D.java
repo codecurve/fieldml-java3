@@ -15,7 +15,7 @@ public class LinearLagrangeInterpolator_2D extends Interpolator {
   }
 
   @Override
-  public double getValue(XiVector xi) throws InvalidDomainException {
+  public double getValue(double[] xiVector) throws InvalidDomainException {
     // TODO Auto-generated method stub
     return 0;
   }

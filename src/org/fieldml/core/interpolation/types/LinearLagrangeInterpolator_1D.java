@@ -35,7 +35,7 @@ public class LinearLagrangeInterpolator_1D extends Interpolator {
   }
 
   private static double phi2(double xi1) {
-    return xi2;
+    return xi1;
   }
 
 
