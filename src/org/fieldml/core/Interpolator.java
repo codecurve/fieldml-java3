@@ -2,7 +2,7 @@ package org.fieldml.core;
 
 
 
-public class Interpolator {
+public class Interpolator implements ValueProducer {
 
 
 }

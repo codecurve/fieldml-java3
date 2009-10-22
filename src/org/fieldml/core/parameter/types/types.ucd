@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="types" size="1831,452" id="org.fieldml.core.parameter.types" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.1/@sourceConnections.0" name="Parameter" location="718,187" size="139,55" id="org.fieldml.core/Parameter" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.1/@sourceConnections.0" name="Parameter" location="118,191" size="139,55" id="org.fieldml.core/Parameter" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="ParamFromFieldEvaluation" location="686,311" size="295,37" id="org.fieldml.core.parameter.types/ParamFromFieldEvaluation" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" name="ParamFromFieldEvaluation" location="86,315" size="295,37" id="org.fieldml.core.parameter.types/ParamFromFieldEvaluation" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
@@ -16,7 +16,7 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="ParamFromGeneralLinearMap" location="1125,281" size="324,37" id="org.fieldml.core.parameter.types/ParamFromGeneralLinearMap" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" name="ParamFromGeneralLinearMap" location="525,285" size="324,37" id="org.fieldml.core.parameter.types/ParamFromGeneralLinearMap" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
@@ -26,7 +26,7 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="ParamFromArrayByIndex" location="1020,75" size="278,37" id="org.fieldml.core.parameter.types/ParamFromArrayByIndex" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" name="ParamFromArrayByIndex" location="420,79" size="278,37" id="org.fieldml.core.parameter.types/ParamFromArrayByIndex" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>

@@ -5,5 +5,6 @@ import org.fieldml.core.Interpolator;
 
 
 public class LinearLagrangeInterpolator_1D extends Interpolator {
+  
 
 }

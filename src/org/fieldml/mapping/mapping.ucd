@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="mapping" size="2442,603" id="org.fieldml.mapping" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="mapping" size="1164,397" id="org.fieldml.mapping" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledY="24" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
   <children xsi:type="editmodel:ClassEditModel" name="FieldElement" location="360,136" size="163,37" id="org.fieldml.mapping/FieldElement" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
@@ -36,20 +36,23 @@
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="Interpolator" location="390,336" size="152,55" id="org.fieldml.core/Interpolator" runTimeClassModel="">
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+  <children xsi:type="editmodel:ClassEditModel" name="Map_FieldElement_to_ValueProducer" location="750,280" size="394,97" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="225,40">
+      <children xsi:type="editmodel:MethodEditModel" name="addValueProducerMapping" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer#addValueProducerMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.ValueProducer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findValueProducer" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer#findValueProducer(Lorg.fieldml.mapping.FieldElement;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="Map_FieldElement_to_Interpolator" location="720,315" size="578,97" id="org.fieldml.mapping/Map_FieldElement_to_Interpolator" runTimeClassModel="findInterpolator(Lorg.fieldml.mapping.FieldElement;),addInterpolatorMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.Interpolator;)">
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="555,40">
-      <children xsi:type="editmodel:MethodEditModel" name="findInterpolator" id="org.fieldml.mapping/Map_FieldElement_to_Interpolator#findInterpolator(Lorg.fieldml.mapping.FieldElement;)"/>
-      <children xsi:type="editmodel:MethodEditModel" name="addInterpolatorMapping" id="org.fieldml.mapping/Map_FieldElement_to_Interpolator#addInterpolatorMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.Interpolator;)"/>
+  <children xsi:type="editmodel:InterfaceEditModel" name="ValueProducer" location="374,300" size="181,133" id="org.fieldml.core/ValueProducer">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,40">
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core/ValueProducer#getValue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core/ValueProducer#getValue(Lorg.fieldml.core.XiVector;)"/>
     </children>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
   <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
   <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
