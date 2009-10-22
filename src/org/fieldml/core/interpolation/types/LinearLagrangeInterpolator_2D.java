@@ -2,7 +2,6 @@ package org.fieldml.core.interpolation.types;
 
 import org.fieldml.core.Interpolator;
 import org.fieldml.core.InvalidDomainException;
-import org.fieldml.core.XiVector;
 
 
 

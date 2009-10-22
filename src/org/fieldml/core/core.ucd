@@ -69,10 +69,10 @@
   <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0" name="ValueProducer" location="255,420" size="104,35" attachment="//@children.3" id="org.fieldml.core/ValueProducer" runTimeClassModel="" kind="provider" iconLabelLocation="1">
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="Constant" location="49,255" size="128,77" id="org.fieldml.core/Constant" runTimeClassModel="getValue,getValue(),constantValue">
+  <children xsi:type="editmodel:ClassEditModel" name="Constant" location="49,255" size="128,77" id="org.fieldml.core/Constant" runTimeClassModel="getValue(),constantValue,getValue([D)">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="95,20">
-      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core/Constant#getValue"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core/Constant#getValue([D)"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:InterfaceProviderEditModel" autoLocated="true" id="org.fieldml.core/ValueProducer&lt;-org.fieldml.core/Constant" source="//@children.7" target="//@children.8" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">

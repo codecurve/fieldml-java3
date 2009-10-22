@@ -56,22 +56,23 @@ public class Test1 extends TestCase {
     ParamFromArrayByIndex u1 = new ParamFromArrayByIndex();
     u1.setArray(array);
     u1.setArrayIndex(0);
+    interpolator1.setU1(u1);
     ParamFromArrayByIndex u2 = new ParamFromArrayByIndex();
-    u1.setArray(array);
-    u1.setArrayIndex(1);
+    u2.setArray(array);
+    u2.setArrayIndex(1);
     interpolator1.setU2(u2);
     mainMap.addValueProducerMapping(fieldElement1, interpolator1);
     
-    Interpolator interpolator2 = new LinearLagrangeInterpolator_1D();
-    interpolator1.setU1(u2);
+    LinearLagrangeInterpolator_1D interpolator2 = new LinearLagrangeInterpolator_1D();
+    interpolator2.setU1(u2);
     ParamFromArrayByIndex u3 = new ParamFromArrayByIndex();
     u3.setArray(array);
     u3.setArrayIndex(2);
-    interpolator1.setU2(u3);
+    interpolator2.setU2(u3);
     mainMap.addValueProducerMapping(fieldElement2, interpolator2);
     
     ValueProducer a = mainMap.findValueProducer(fieldElement1);
-    assertEquals(fieldElement2, a);
+    assertEquals(interpolator1, a);
     double[] xiVector = new double[1];
     xiVector[0] = 0.0;
     double value1 = a.getValue(xiVector);
