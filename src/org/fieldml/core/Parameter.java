@@ -1,6 +1,6 @@
 package org.fieldml.core;
 
 
-public class Parameter {
-
+public interface Parameter {
+  double getValue();
 }

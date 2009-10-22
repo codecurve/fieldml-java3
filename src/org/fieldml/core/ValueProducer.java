@@ -2,7 +2,7 @@ package org.fieldml.core;
 
 
 public interface ValueProducer {
-  double getValue();
-  double getValue(XiVector xi) throws InvalidDomainException;
+  double getValue() throws InvalidDomainException;
+  double getValue(double[] xiVector) throws InvalidDomainException;
 
 }

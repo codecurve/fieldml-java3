@@ -8,9 +8,11 @@ import org.fieldml.core.Element;
 import org.fieldml.core.Field;
 import org.fieldml.core.Interpolator;
 import org.fieldml.core.Mesh;
+import org.fieldml.core.Parameter;
 import org.fieldml.core.interpolation.types.LinearLagrangeInterpolator_1D;
 import org.fieldml.mapping.FieldElement;
 import org.fieldml.mapping.Map_FieldElement_to_ValueProducer;
+import org.fieldml.core.parameter.types.ParamFromArrayByIndex;
 
 public class Test1 extends TestCase {
   public void testTest1a() {
@@ -42,10 +44,28 @@ public class Test1 extends TestCase {
 
     Map_FieldElement_to_ValueProducer mainMap = new Map_FieldElement_to_ValueProducer();
 
-    Interpolator interpolator1 = new LinearLagrangeInterpolator_1D();
+    double[] array = new double[4];
+    array[0] = 0.1;
+    array[1] = -0.3;
+    array[2] = 2.0;
+    array[3] = 0.12;
+    
+    LinearLagrangeInterpolator_1D interpolator1 = new LinearLagrangeInterpolator_1D();
+    ParamFromArrayByIndex u1 = new ParamFromArrayByIndex();
+    u1.setArray(array);
+    u1.setArrayIndex(0);
+    ParamFromArrayByIndex u2 = new ParamFromArrayByIndex();
+    u1.setArray(array);
+    u1.setArrayIndex(1);
+    interpolator1.setU2(u2);
     mainMap.addValueProducerMapping(fieldElement1, interpolator1);
     
     Interpolator interpolator2 = new LinearLagrangeInterpolator_1D();
+    interpolator1.setU1(u2);
+    ParamFromArrayByIndex u3 = new ParamFromArrayByIndex();
+    u3.setArray(array);
+    u3.setArrayIndex(2);
+    interpolator1.setU2(u3);
     mainMap.addValueProducerMapping(fieldElement2, interpolator2);
 
   }
