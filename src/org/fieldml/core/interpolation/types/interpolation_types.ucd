@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="types" size="1280,417" id="org.fieldml.core.interpolation.types" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
-  <children xsi:type="editmodel:ClassEditModel" name="LinearLagrangeInterpolator_1D" location="39,467" size="336,37" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_1D" runTimeClassModel="">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="types" size="1805,524" id="org.fieldml.core.interpolation.types" metadata="uml2-1.0" initialized="true" scrolledY="96" tag="1000" key="32303037303533312D31303030206669656C646D6C2D6A617661332F72627269303533">
+  <children xsi:type="editmodel:ClassEditModel" name="LinearLagrangeInterpolator_1D" location="39,467" size="336,97" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_1D" runTimeClassModel="getValue(),getValue(Lorg.fieldml.core.XiVector;)">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,40">
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_1D#getValue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_1D#getValue(Lorg.fieldml.core.XiVector;)"/>
+    </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.fieldml.core/Interpolator&lt;-org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_1D" source="//@children.0" target="//@children.2/@sourceConnections.0" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
       <children xsi:type="editmodel:AssociationEndEditModel" location="74,0" attachSource="true"/>
@@ -21,9 +24,12 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="LinearLagrangeInterpolator_2D" location="734,467" size="336,37" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_2D" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" name="LinearLagrangeInterpolator_2D" location="734,467" size="336,97" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_2D" runTimeClassModel="getValue(),getValue(Lorg.fieldml.core.XiVector;)">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,40">
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_2D#getValue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_2D#getValue(Lorg.fieldml.core.XiVector;)"/>
+    </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.0/@sourceConnections.0" id="org.fieldml.core/Interpolator&lt;-org.fieldml.core.interpolation.types/LinearLagrangeInterpolator_2D" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
       <children xsi:type="editmodel:AssociationEndEditModel" location="168,0" anchorKind="FixedAtEdge" attachSource="true"/>
@@ -32,9 +38,12 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="CubicHermiteInterpolator_1D" location="382,467" size="315,37" id="org.fieldml.core.interpolation.types/CubicHermiteInterpolator_1D" runTimeClassModel="">
+  <children xsi:type="editmodel:ClassEditModel" name="CubicHermiteInterpolator_1D" location="382,467" size="315,97" id="org.fieldml.core.interpolation.types/CubicHermiteInterpolator_1D" runTimeClassModel="getValue(),getValue(Lorg.fieldml.core.XiVector;)">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,40">
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/CubicHermiteInterpolator_1D#getValue(Lorg.fieldml.core.XiVector;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValue" id="org.fieldml.core.interpolation.types/CubicHermiteInterpolator_1D#getValue()"/>
+    </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.fieldml.core/Interpolator&lt;-org.fieldml.core.interpolation.types/CubicHermiteInterpolator_1D" source="//@children.3" target="//@children.2/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
       <children xsi:type="editmodel:AssociationEndEditModel" location="37,0" attachSource="true"/>

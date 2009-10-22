@@ -2,15 +2,15 @@ package org.fieldml.examples;
 
 import java.util.List;
 
+import junit.framework.TestCase;
+
 import org.fieldml.core.Element;
 import org.fieldml.core.Field;
 import org.fieldml.core.Interpolator;
 import org.fieldml.core.Mesh;
 import org.fieldml.core.interpolation.types.LinearLagrangeInterpolator_1D;
 import org.fieldml.mapping.FieldElement;
-import org.fieldml.mapping.Map_FieldElement_to_Interpolator;
-
-import junit.framework.TestCase;
+import org.fieldml.mapping.Map_FieldElement_to_ValueProducer;
 
 public class Test1 extends TestCase {
   public void testTest1a() {
@@ -40,13 +40,13 @@ public class Test1 extends TestCase {
     fieldElement2.setElement(element2);
     fieldElement2.setField(field1);
 
-    Map_FieldElement_to_Interpolator mainMap = new Map_FieldElement_to_Interpolator();
+    Map_FieldElement_to_ValueProducer mainMap = new Map_FieldElement_to_ValueProducer();
 
     Interpolator interpolator1 = new LinearLagrangeInterpolator_1D();
-    mainMap.addInterpolatorMapping(fieldElement1, interpolator1);
+    mainMap.addValueProducerMapping(fieldElement1, interpolator1);
     
     Interpolator interpolator2 = new LinearLagrangeInterpolator_1D();
-    mainMap.addInterpolatorMapping(fieldElement2, interpolator2);
+    mainMap.addValueProducerMapping(fieldElement2, interpolator2);
 
   }
 
