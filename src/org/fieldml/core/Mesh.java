@@ -9,7 +9,7 @@ public class Mesh {
    * @uml.property name="field"
    * @uml.associationEnd readOnly="true" multiplicity="(0 -1)" ordering="true" inverse="mesh:org.fieldml.core.Field"
    */
-  private List<Field> fields = new java.util.ArrayList<Field>();
+  public List<Field> fields = new java.util.ArrayList<Field>();
 
   /** 
    * Getter of the property <tt>field</tt>
@@ -24,7 +24,7 @@ public class Mesh {
    * @uml.property  name="element"
    * @uml.associationEnd  readOnly="true" multiplicity="(0 -1)" ordering="true" inverse="mesh:org.fieldml.core.Element"
    */
-  private List<Element> elements = new java.util.ArrayList<Element>();
+  public List<Element> elements = new java.util.ArrayList<Element>();
 
   /**
    * Getter of the property <tt>element</tt>

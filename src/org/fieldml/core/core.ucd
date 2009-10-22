@@ -18,7 +18,7 @@
         <children xsi:type="editmodel:LabelEditModel" name="0..1" location="359,70" size="26,18" anchorKind="FirstPart"/>
       </children>
       <children xsi:type="editmodel:AssociationEndEditModel" name="field" location="130,18" id="org.fieldml.core/Field@field+org.fieldml.core/Mesh@mesh|org.fieldml.core/Field#field" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1" changeability="2">
-        <children xsi:type="editmodel:LabelEditModel" name=" - field" location="197,38" size="42,18" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name=" + field" location="197,38" size="46,18" anchorKind="LastPart"/>
         <children xsi:type="editmodel:LabelEditModel" name="*" location="197,70" size="6,18" anchorKind="LastPart"/>
       </children>
       <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>

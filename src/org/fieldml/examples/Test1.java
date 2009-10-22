@@ -1,23 +1,26 @@
 package org.fieldml.examples;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 import junit.framework.TestCase;
+import net.sourceforge.yamlbeans.YamlException;
+import net.sourceforge.yamlbeans.YamlWriter;
 
 import org.fieldml.core.Element;
 import org.fieldml.core.Field;
-import org.fieldml.core.Interpolator;
 import org.fieldml.core.InvalidDomainException;
 import org.fieldml.core.Mesh;
-import org.fieldml.core.Parameter;
 import org.fieldml.core.ValueProducer;
 import org.fieldml.core.interpolation.types.LinearLagrangeInterpolator_1D;
+import org.fieldml.core.parameter.types.ParamFromArrayByIndex;
 import org.fieldml.mapping.FieldElement;
 import org.fieldml.mapping.Map_FieldElement_to_ValueProducer;
-import org.fieldml.core.parameter.types.ParamFromArrayByIndex;
+
 
 public class Test1 extends TestCase {
-  public void testTest1a() throws InvalidDomainException {
+  public void testTest1a() throws InvalidDomainException, YamlException, IOException {
     Mesh mesh = new Mesh();
 
     Field field1 = new Field();
@@ -96,6 +99,10 @@ public class Test1 extends TestCase {
     xiVector[0] = 0.5;
     value = vp2.getValue(xiVector);
     assertEquals((array[1]+array[2])/2, value, 1e-12);
+    
+    YamlWriter writer = new YamlWriter(new FileWriter("temp/output.yml"));
+    writer.write(mainMap);
+    writer.close();
   
   }
 

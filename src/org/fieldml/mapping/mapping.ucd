@@ -36,8 +36,10 @@
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" name="Map_FieldElement_to_ValueProducer" location="750,280" size="394,97" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer" runTimeClassModel="addValueProducerMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.ValueProducer;),findValueProducer(Lorg.fieldml.mapping.FieldElement;)">
-    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+  <children xsi:type="editmodel:ClassEditModel" name="Map_FieldElement_to_ValueProducer" location="750,280" size="394,117" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer" runTimeClassModel="addValueProducerMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.ValueProducer;),map,findValueProducer(Lorg.fieldml.mapping.FieldElement;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="307,20">
+      <children xsi:type="editmodel:AttributeEditModel" name="map" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer#map"/>
+    </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="225,40">
       <children xsi:type="editmodel:MethodEditModel" name="addValueProducerMapping" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer#addValueProducerMapping(Lorg.fieldml.mapping.FieldElement;Lorg.fieldml.core.ValueProducer;)"/>
       <children xsi:type="editmodel:MethodEditModel" name="findValueProducer" id="org.fieldml.mapping/Map_FieldElement_to_ValueProducer#findValueProducer(Lorg.fieldml.mapping.FieldElement;)"/>

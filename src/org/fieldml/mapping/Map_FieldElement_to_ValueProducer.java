@@ -7,7 +7,7 @@ import org.fieldml.core.ValueProducer;
 
 
 public class Map_FieldElement_to_ValueProducer {
-  private Map<FieldElement,ValueProducer> map = new HashMap<FieldElement,ValueProducer>();
+  public Map<FieldElement,ValueProducer> map = new HashMap<FieldElement,ValueProducer>();
 
   public ValueProducer findValueProducer(FieldElement fieldElement){
     return map.get(fieldElement);
