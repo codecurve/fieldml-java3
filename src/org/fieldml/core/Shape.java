@@ -1,8 +1,6 @@
 package org.fieldml.core;
 
 
-
-public class Interpolator {
-
+public class Shape {
 
 }

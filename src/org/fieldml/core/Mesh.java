@@ -9,30 +9,30 @@ public class Mesh {
    * @uml.property name="field"
    * @uml.associationEnd readOnly="true" multiplicity="(0 -1)" ordering="true" inverse="mesh:org.fieldml.core.Field"
    */
-  private List field = new java.util.ArrayList();
+  private List<Field> fields = new java.util.ArrayList<Field>();
 
   /** 
    * Getter of the property <tt>field</tt>
    * @return  Returns the field.
    * @uml.property  name="field"
    */
-  public List getField() {
-    return field;
+  public List<Field> getFields() {
+    return fields;
   }
 
   /**
    * @uml.property  name="element"
    * @uml.associationEnd  readOnly="true" multiplicity="(0 -1)" ordering="true" inverse="mesh:org.fieldml.core.Element"
    */
-  private List element = new java.util.ArrayList();
+  private List<Element> elements = new java.util.ArrayList<Element>();
 
   /**
    * Getter of the property <tt>element</tt>
    * @return  Returns the element.
    * @uml.property  name="element"
    */
-  public List getElement() {
-    return element;
+  public List<Element> getElements() {
+    return elements;
   }
 
 }

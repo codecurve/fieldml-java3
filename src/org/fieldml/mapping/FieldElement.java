@@ -2,8 +2,10 @@ package org.fieldml.mapping;
 
 import org.fieldml.core.Field;
 import org.fieldml.core.Element;
-import java.util.Map;
 import org.fieldml.core.Interpolator;
+
+import java.util.Map;
+
 
 
 public class FieldElement {
