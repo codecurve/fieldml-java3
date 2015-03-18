@@ -1,0 +1,1 @@
+We aim here to explore the ideas for the FieldML object model.  This is done by prototyping in Java, with a view to also creating  serializations (in XML or Yaml) that map to in memory representations, as well as UML diagrams that represent the object model.
